@@ -1,0 +1,519 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+html{
+    font-size: 90%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+html::-webkit-scrollbar-track{
+    background-color: var(--white);
+}
+html::-webkit-scrollbar-thumb{
+    background-color: brown;
+}
+section{
+    padding: 5rem 7%;
+}
+.heading{
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    margin-top: 3rem;
+}
+
+/* header */
+.header{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow:burlywood;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: burlywood;
+    z-index: 1000;
+}
+.header .logo{
+   font-size: 2.5rem;
+   font-weight: bolder;
+   color: black;
+   text-transform: capitalize;
+}
+.header .navbar #close-navbar{
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 4rem;
+    cursor: pointer;
+    color: black;
+    display: none;
+}
+.header .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: black;
+    text-transform: capitalize;
+}
+.header .navbar a:hover{
+    padding-bottom: 0.5rem;
+    color: brown;
+}
+#menu-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: black;
+    display: none;
+}
+/* home*/
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(background-for-male-hair-salon-vector-1849274.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    max-width: 60rem;
+}
+.home .content span{
+    font-size: 3rem;
+    letter-spacing: .5rem;
+    padding-bottom: .5rem;
+    color:black;
+    text-transform: uppercase;
+}
+.home .content h3{
+    color: black;
+    font-size: 8rem;
+    line-height: 8rem;
+    font-weight: 700;
+}
+
+/*about us*/
+
+.about{
+ background-image: url(gradient-beauty-youtube-channel-art_23-2148890372.avif);
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about .row .image{
+    flex: 1 1 39rem;
+}
+.about .row .image img{
+    width: 100%;
+}
+.about .row .content{
+    flex: 1 1 51rem;
+    padding: 5rem;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color:black;
+    text-transform: capitalize;
+}
+.about .row .content p{
+    font-size: 1.6rem;
+    color: black;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+.about .row .content .icons-container {
+display: flex;
+flex-wrap: wrap;
+gap:2rem;
+margin-top: 3rem;
+}
+.about .row .content .icons-container .icons{
+    flex:1 1 16rem;
+    text-align: center;
+    background:burlywood;
+    padding: 3rem 2rem;
+}
+.about .row .content .icons-container .icons img{
+    height: 5rem;
+
+}
+
+
+/*services*/
+
+.services{
+    background-image: url(gradient-beauty-youtube-channel-art_23-2148890372.avif);
+}
+.services .box-container{
+    display: grid;
+    gap:2rem;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr))
+}
+.services .box-container .box{
+   position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.services .box-container .box img{
+    object-fit: cover;
+    height: 90%;
+    width: 90%;
+}
+.services .box-container .box:hover img{
+   transform: scale(1.1);
+}
+.services .box-container .box .content{
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.services .box-container .box .content h3{
+    text-align: center;
+    font-size: 3rem;
+    color: antiquewhite;
+    padding-top: 1rem;
+    text-transform: capitalize;
+}
+.services .box-container .box:hover .content{
+    display: flex;
+}
+
+
+/*end of services*/
+
+
+/*styles*/
+
+.styles{
+    background-color: antiquewhite;
+}
+.styles .box-container{
+    display: grid;
+    gap:1.5rem;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+}
+.styles .box-container .box .image{
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+.styles .box-container .box .image img{
+    object-fit: cover;
+}
+.styles .box-container .box .content{
+    text-align: center;
+}
+.styles .box-container .box .content .title{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: black;
+}
+.styles .box-container .box .content p{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    color: #444;
+    line-height: 1.8;
+}
+
+/*pricing*/
+
+.pricing{
+    background-image: url(gradient-beauty-youtube-channel-art_23-2148890372.avif);
+    background-attachment: fixed;
+}
+.pricing .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.pricing .box-container .box{
+    height: 500px;
+    width: 300px;
+    margin: 20px 40px;
+    border-radius: 10px;
+    box-shadow: var(--white);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background-color: #444;
+}
+.pricing .box-container .box::before,
+.pricing .box-container .box::after{
+content:'';
+position: absolute;
+height: 200px;
+width: 200px;
+border-radius: 50%;
+opacity: .5;
+}
+.pricing .box-container .box::before{
+    top:-10%;
+    left:80%;
+    background: burlywood;
+}
+.pricing .box-container .box::after{
+background-color: burlywood;
+bottom: -10%;
+right:80%
+}
+.pricing .box-container .box .title{
+    margin:30px 0;
+    font-size: 26px;
+    color: black;
+    text-transform: capitalize;
+}
+.pricing .box-container .box .price{
+    height: 160px;
+    width: 160px;
+    color: antiquewhite;
+    background-color: coral;
+    padding: 57px 0 0;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+}
+.pricing .box-container .box .price .currency{
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 300;
+}
+.pricing .box-container .box .price .amount{
+    font-size: 58px;
+    line-height: 45px;
+    font-weight: 500;
+}
+.pricing .box-container .box ul li{
+    text-align: left;
+    font-size: 16px;
+    padding-left: 45px;
+    margin:20px auto;
+    color: whitesmoke;
+    list-style: none;
+    text-transform: uppercase;
+}
+.pricing .box-container .box ul li i{
+    color: burlywood;
+    padding: 0px 10px;
+}
+.pricing .box-container .box button{
+    height: 40px;
+    width: 140px;
+    outline: none;
+    border-radius: 50px;
+    text-transform: capitalize;
+    cursor: pointer;
+    background: none;
+    color: burlywood;
+    border: 2px solid black;
+    font-size:14px;
+    font-weight: bold;
+}
+.pricing .box-container .box button:hover{
+color: whitesmoke;
+background:black;
+}
+
+/*end of pricing*/
+
+/*blogs*/
+
+.blogs .box-container{
+    display: grid;
+    gap:3rem;
+    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+}
+.blogs .box-container .box{
+    background:burlywood;
+}
+.blogs .box-container .box .image{
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+.blogs .box-container .box .image img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+.blogs .box-container .box:hover .image img{
+    transform: scale(1.2);
+}
+.blogs .box-container .box .content{
+    padding: 2rem;
+}
+.blogs .box-container .box .content .title{
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color:whitesmoke;
+}
+.blogs .box-container .box .content .title:hover{
+    color: brown;
+}
+.blogs .box-container .box .content span{
+    color: brown;
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.blogs .box-container .box .content p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: whitesmoke;
+    padding: 1rem 0;
+}
+/*end of our blogs*/
+
+/*visit page*/
+
+.visit{
+    background-color: burlywood;
+    background-position: center;
+    background-size: cover;
+}
+.visit .row{
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+gap: 2rem;
+}
+.visit .row form{
+    flex:1 1 40rem;
+    border: 0.3rem solid var(--white);
+    padding: 2rem;
+}
+.visit .row form h3{
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--white);
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+.visit .row form .inputBox{
+ display: flex;
+ align-items: center;
+ margin-top: 2rem;
+ margin-bottom: 2rem;
+ border: beige;
+ background: var(white);
+}
+.visit .row form .inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color:white;
+    text-transform: none;
+    background: none;
+}
+.btn{
+margin-top: 1rem;
+display: inline-block;
+cursor: pointer;
+color: whitesmoke;
+font-size: 2rem;
+background-color: black;
+padding: 1rem 3rem;
+}
+
+/*end of visit*/
+
+/*review*/
+.review{
+    background-color: burlywood;
+}
+.review .box-container{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+}
+.review .box-container .box{
+    border: var(--border);
+    text-align: center;
+    padding:3rem 2rem
+}
+.review .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: black;
+    padding: 2rem 0;
+}
+.review .box-container .box h3{
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: black;
+    text-transform: capitalize;
+}
+.review .box-container .box .stars{
+    font-size: 1.5rem;
+    color: black;
+}
+
+/*end of review*/
+
+
+/*footer*/
+.footer{
+    background-color:crimson;
+    text-align: center;
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+    gap: 2rem;
+}
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    color: black;
+    padding: 1rem 0;
+}
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 2;
+    color: black;
+    padding: 1rem 0;
+}
+.footer .box-container .box .share{
+    margin-top: 1rem;
+}
+.footer .box-container .box .share a{
+    height:4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 50%;
+    font-size: 1.7rem;
+    background-color: burlywood;
+    color: antiquewhite;
+    margin-right: .3rem;
+    text-align: center;
+}
+.footer .box-container .box .share a:hover{
+    background: black;
+}
+.footer .box-container .box .link{
+    font-size: 1.7rem;
+    line-height: 2;
+    color: black;
+    display: block;
+}

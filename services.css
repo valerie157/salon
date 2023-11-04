@@ -1,0 +1,45 @@
+.services{
+    background-image: url(gradient-beauty-youtube-channel-art_23-2148890372.avif);
+}
+.services .box-container{
+    display: grid;
+    gap:2rem;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr))
+}
+.services .box-container .box{
+   position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.services .box-container .box img{
+    object-fit: cover;
+    height: 90%;
+    width: 90%;
+}
+.services .box-container .box:hover img{
+   transform: scale(1.1);
+}
+.services .box-container .box .content{
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.services .box-container .box .content h3{
+    text-align: center;
+    font-size: 3rem;
+    color: antiquewhite;
+    padding-top: 1rem;
+    text-transform: capitalize;
+}
+.services .box-container .box:hover .content{
+    display: flex;
+}
+
+
+/*end of services*/
